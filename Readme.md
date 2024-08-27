@@ -5,8 +5,8 @@ This project detects proximity events between vessels using GPS data and visuali
 ## Installation
 
 1. Clone the repository:  
-   `git clone https://github.com/your-username/your-repo-name.git`  
-   `cd your-repo-name`
+   `git clone https://github.com/Shelbybosss/GIS-vesselproximity.git`  
+   `cd GIS-vesselproximity`
 
 2. Install dependencies:  
    `pip install pandas numpy matplotlib cartopy`
