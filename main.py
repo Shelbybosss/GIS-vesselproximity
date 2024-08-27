@@ -8,7 +8,7 @@ import cartopy.feature as cfeature
 
 # Function to calculate Haversine distance between two points on Earth
 def haversine(lat1, lon1, lat2, lon2):
-    R = 6371.0  # Earth radius in kilometers
+    R = 6371.0  
     lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
     
     dlat = lat2 - lat1
@@ -21,9 +21,9 @@ def haversine(lat1, lon1, lat2, lon2):
     return distance
 
 # Load vessel data
-df = pd.read_csv('./assets/sample_data.csv')  # Replace with the actual file path
+df = pd.read_csv('./assets/sample_data.csv')  
 
-# Define threshold distance in kilometers (e.g., 500 meters)
+# threshold distance in kilometers 
 threshold_distance = 0.5
 
 # Dictionary to store proximity events
@@ -47,7 +47,7 @@ for mmsi, interactions in proximity_events.items():
 
 result_df = pd.DataFrame(result)
 
-# Save proximity events to a CSV file
+# Saving proximity events to a CSV file
 result_df.to_csv('vessel_proximity_events.csv', index=False)
 
 print("Vessel proximity events detected and saved to vessel_proximity_events.csv")
